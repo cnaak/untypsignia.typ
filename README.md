@@ -24,7 +24,7 @@ For best emulating the rendering of "typst", the `"Buenard"` font [Buenard - Goo
 Fonts](https://fonts.google.com/specimen/Buenard) must be installed, as to best approach the
 rendering shown in Typst's own documentation, shown below:
 
-![typst](https://typst.app/assets/images/typst.svg).
+![typst](https://typst.app/assets/images/typst.svg)
 
 ## Usage
 
