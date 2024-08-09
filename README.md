@@ -21,8 +21,10 @@ in `TeX` systems and derivatives thereof.
 ## Font Requirements
 
 For best emulating the rendering of "typst", the `"Buenard"` font [Buenard - Google
-Fonts](https://fonts.google.com/specimen/Buenard) must be installed, as to best approach the one
-available in Typst's documentation: ![typst](https://typst.app/assets/images/typst.svg).
+Fonts](https://fonts.google.com/specimen/Buenard) must be installed, as to best approach the
+rendering shown in Typst's own documentation, shown below:
+
+![typst](https://typst.app/assets/images/typst.svg).
 
 ## Usage
 
