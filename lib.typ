@@ -8,7 +8,7 @@
 
 // TeX - from "plain.tex"
 // \def\TeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX}
-// Conversion factor from "ex" to "em" from https://tex.stackexchange.com/a/8337
+// Conversion factor 1ex=0.43056em from https://tex.stackexchange.com/a/8337
 #let texmark() = {
   set text(font: "New Computer Modern")
   box()[T#h(-.1667em)#text(baseline:.43056*.5em,"E")#h(-.125em)X]
