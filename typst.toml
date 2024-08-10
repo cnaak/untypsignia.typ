@@ -1,0 +1,11 @@
+[package]
+name = "untypsignia"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Naaktgeboren, C.", ]
+license = "MIT"
+description = ""
+keywords = ["unofficial", "insignia", "emulator"]
+categories = ["model", "scripting"]
+disciplines = ["", ]
+compiler = "0.11.1"
