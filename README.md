@@ -52,11 +52,11 @@ images — so as to avoid hyphenation to take place.
 ## Example
 
 ```typst
-#set page(width: auto, height: auto, margin: 12pt, fill: rgb("eec"))
+#set page(width: auto, height: auto, margin: 12pt, fill: rgb("19181f"))
 #set par(leading: 1.5em)
-#set text(font: "TeX Gyre Termes")
+#set text(font: "TeX Gyre Termes", fill: rgb("80f4b6"))
 
-#import "@preview/untypsignia:0.1.0": *
+#import "lib.typ": *
 
 #let say() = [I prefer #typstmark() over #texmark() or #latexmark().]
 
@@ -70,7 +70,7 @@ images — so as to avoid hyphenation to take place.
 This example results in a 1-page document like this one:
 
 ![Compiled
-Example](https://github.com/cnaak/untypsignia.typ/blob/c9560c4b1d81fb999423e41e95fa6924af0ffdf1/thumbnail.png)
+Example](https://github.com/cnaak/untypsignia.typ/blob/d9e215df04264a4e76a23d9f7130fe4670857733/thumbnail.png)
 
 ## Citing
 
