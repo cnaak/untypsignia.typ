@@ -56,7 +56,7 @@ images — so as to avoid hyphenation to take place.
 #set par(leading: 1.5em)
 #set text(font: "TeX Gyre Termes", fill: rgb("80f4b6"))
 
-#import "lib.typ": *
+#import "@preview/untypsignia:0.1.0": *
 
 #let say() = [I prefer #typstmark() over #texmark() or #latexmark().]
 
