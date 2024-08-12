@@ -14,9 +14,15 @@ The package name is a blend of:
 
 ## Description
 
-The typical use case of `untypsignia` in Typst is to emulate typesetting system's marks, when
-referring to them, in sentences like: "This document is typeset in `XYZ`", as traditionally done
-in `TeX` systems and derivatives thereof.
+The typical use case of `untypsignia` in Typst is to emulate a given typesetting system's mark,
+if available, when referring to them, in sentences like: "This document is typeset in `XYZ`", as
+traditionally done in `TeX` systems and derivatives thereof.
+
+Currently available insignia emulations include:
+
+- `TeX`,
+- `LaTeX`, and
+- `typst`.
 
 ## Font Requirements
 
@@ -26,12 +32,22 @@ rendering shown in Typst's own documentation, shown below:
 
 ![typst](https://typst.app/assets/images/typst.svg)
 
+For the `TeX` system and it's derivatives, the `"New Computer Modern"` font is required.
+
 ## Usage
 
-The package exposes the following few, parameterless, functions: (i) `#texmark()`, (ii)
-`#latexmark()`, and (iii) `#typstmark()`; each one to output their respective namesake insignia
-emulation, in the document's current `text` settings, as `contexts` text inside a `box`, so as
-to forbid hyphenation to take place.
+The package exposes the following few, parameterless, functions:
+
+- `#texmark()`,
+- `#latexmark()`, and
+- `#typstmark()`.
+
+Each such command to output their respective namesake signus emulation, in the document's
+current `text` settings, with the exception of font — meaning text size, color, etc... will
+apply to the signus emulation.
+
+Aditionally, the signus emulation is produced, as `contexts` text inside a `box` — hence not
+images — so as to avoid hyphenation to take place.
 
 ## Example
 
