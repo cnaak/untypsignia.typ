@@ -33,6 +33,29 @@ The package exposes the following few, parameterless, functions: (i) `#texmark()
 emulation, in the document's current `text` settings, as `contexts` text inside a `box`, so as
 to forbid hyphenation to take place.
 
+## Example
+
+```typst
+#set page(width: auto, height: auto, margin: 12pt, fill: rgb("eec"))
+#set par(leading: 1.5em)
+#set text(font: "TeX Gyre Termes")
+
+#import "@preview/untypsignia:0.1.0": *
+
+#let say() = [I prefer #typstmark() over #texmark() or #latexmark().]
+
+#for sz in (20, 16, 14, 12, 10, 8) {
+  set text(size: sz * 1pt)
+  say()
+  linebreak()
+}
+```
+
+This example results in a 1-page document like this one:
+
+![Compiled
+Example](https://github.com/cnaak/untypsignia.typ/blob/c9560c4b1d81fb999423e41e95fa6924af0ffdf1/thumbnail.png)
+
 ## Citing
 
 This package can be cited with the following bibliography database entry:
