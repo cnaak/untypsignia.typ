@@ -84,7 +84,7 @@ untypsignia-package:
   title:
     value: "untypsignia: unofficial typesetter's insignia emulations"
   url: https://github.com/cnaak/untypsignia.typ
-  version: 0.1.0
+  version: 0.1.1
   date: 2024-08
 ```
 
