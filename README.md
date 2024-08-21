@@ -26,9 +26,10 @@ Currently available insignia emulations include:
 
 Despite there's no such a thing as a Typst "official" typography, according to this post on
 [Discord](https://discord.com/channels/1054443721975922748/1054443722592497796/1107039477714665522),
-Typst [branding page](https://typst.app/legal/brand/) requires capitalization of the initial "T"
-whenever using the name in prose. Therefore, the "Typst" support in this package is a mere,
-still unofficial, implementation of the linked guides/regulations.
+it can be typeset with "whatever font" the surrounding text is being typeset. Moreover, Typst
+[branding page](https://typst.app/legal/brand/) requires capitalization of the initial "T"
+whenever the name is used in prose. Therefore, the "Typst" support in this package is a mere,
+still unofficial, implementation of the capitalization of "Typst" in the currently used font.
 
 ## Font Requirements
 
@@ -48,7 +49,7 @@ size, color, etc... will apply to the signus emulation.
 
 Aditionally, the signus emulation is produced, as `contexts` text inside a `box` — hence not
 images — so as to avoid hyphenation to take place. This also applies to the `#typstmark()`
-function, for lack of guidance, and also because "Typst" is a short word.
+function, for lack of specific guidance, and also because "Typst" is a short word.
 
 ## Example
 
