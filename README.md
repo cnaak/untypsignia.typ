@@ -22,15 +22,15 @@ Currently available insignia emulations include:
 
 - `TeX`,
 - `LaTeX`, and
-- `typst`.
+- `Typst` (see below)
+
+Despite there's no such a thing as a Typst "official" typography, according to this post on
+[Discord](https://discord.com/channels/1054443721975922748/1054443722592497796/1107039477714665522),
+Typst [branding page](https://typst.app/legal/brand/) requires capitalization of the initial "T"
+whenever using the name in prose. Therefore, the "Typst" support in this package is a mere,
+still unofficial, implementation of the linked guides/regulations.
 
 ## Font Requirements
-
-For best emulating the rendering of "typst", the `"Buenard"` font [Buenard - Google
-Fonts](https://fonts.google.com/specimen/Buenard) must be installed, as to best approach the
-rendering shown in Typst's own documentation, shown below:
-
-![typst](https://typst.app/assets/images/typst.svg)
 
 For the `TeX` system and it's derivatives, the `"New Computer Modern"` font is required.
 
@@ -42,21 +42,22 @@ The package exposes the following few, parameterless, functions:
 - `#latexmark()`, and
 - `#typstmark()`.
 
-Each such command to output their respective namesake signus emulation, in the document's
-current `text` settings, with the exception of font — meaning text size, color, etc... will
-apply to the signus emulation.
+Except for the `#typstmark()`, each such command outputs their respective namesake signus
+emulation, in the document's current `text` settings, with the exception of font — meaning text
+size, color, etc... will apply to the signus emulation.
 
 Aditionally, the signus emulation is produced, as `contexts` text inside a `box` — hence not
-images — so as to avoid hyphenation to take place.
+images — so as to avoid hyphenation to take place. This also applies to the `#typstmark()`
+function, for lack of guidance, and also because "Typst" is a short word.
 
 ## Example
 
 ```typst
 #set page(width: auto, height: auto, margin: 12pt, fill: rgb("19181f"))
 #set par(leading: 1.5em)
-#set text(font: "TeX Gyre Termes", fill: rgb("80f4b6"))
+#set text(font: "Rouge Script", fill: rgb("80f4b6"))
 
-#import "@preview/untypsignia:0.1.0": *
+#import "@preview/untypsignia:0.1.1": *
 
 #let say() = [I prefer #typstmark() over #texmark() or #latexmark().]
 
@@ -70,7 +71,7 @@ images — so as to avoid hyphenation to take place.
 This example results in a 1-page document like this one:
 
 ![Compiled
-Example](https://github.com/cnaak/untypsignia.typ/blob/d9e215df04264a4e76a23d9f7130fe4670857733/thumbnail.png)
+Example](https://github.com/cnaak/untypsignia.typ/blob/86b221379931edcbfa91b50159a4ff930ecbec47/thumbnail.png)
 
 ## Citing
 
