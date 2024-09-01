@@ -1,6 +1,6 @@
 #set page(width: auto, height: auto, margin: 12pt, fill: rgb("19181f"))
 #set par(leading: 1.5em)
-#set text(font: "TeX Gyre Termes", fill: rgb("80f4b6"))
+#set text(font: "Rouge Script", fill: rgb("80f4b6"))
 
 #import "lib.typ": *
 
